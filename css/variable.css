@@ -1,0 +1,55 @@
+/* Réglage font-size TOUT */
+
+body {
+    font-size: 24px;
+}
+
+h1,
+h2 {
+    font-size: 32px;
+}
+
+header nav ul,
+article.home-identity p,
+article.library :nth-child(3) {
+    font-size: 20px;
+}
+
+header nav ul li a:hover {
+    font-size: 1.1em;
+}
+
+@media screen and (max-width:1280px) {
+    .home-grid {
+        font-size: 0.8em !important;
+    }
+}
+
+@media screen and (max-width:1080px) {
+    article.home-identity p {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:880px) {
+    body {
+        font-size: 20px;
+    }
+
+    h1,
+    h2 {
+        font-size: 24px;
+    }
+
+    header nav ul {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:680px) {
+
+    header nav ul,
+    article.home-identity p {
+        font-size: 14px;
+    }
+}

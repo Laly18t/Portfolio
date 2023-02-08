@@ -1,0 +1,305 @@
+
+body {
+    scrollbar-color: #FFFAF1;
+    scrollbar-width: thin;
+    font-family: "Kirvy";
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    background-color: #FFFAF1;
+}
+
+body::-webkit-scrollbar {
+    width: 20px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #F6911F;
+    border: 3px solid #FFFAF1;
+    border-radius: 10px;
+}
+
+header,
+footer,
+article {
+    padding: 1% 6%;
+}
+
+
+
+@media screen and (max-width:880px) {
+    article {
+        padding: 1% 4%;
+    }
+}
+
+@media screen and (max-width:580px) {
+    article {
+        padding: 1% 2%;
+    }
+}
+
+
+/* PARTIE 1 : Accroche */
+
+article.home-accroche {
+    display: flex;
+    flex-direction: column;
+    margin: 50px 0;
+    width: 100%;
+}
+
+article.home-accroche h1 {
+    margin: auto;
+}
+
+
+/* article happy */
+.home-explanation {
+    position: relative;
+    margin-bottom: 180px;
+}
+
+.home-explanation>div>img {
+    display: flex;
+    position: absolute;
+    float: left;
+    width: 15%;
+    z-index: -1;
+}
+
+.explanation-text {
+    padding-top: 250px;
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    z-index: 1;
+}
+
+.blob2 {
+    margin-top: 50px;
+    width: 25%;
+    display: flex;
+    float: right;
+    z-index: -1;
+}
+
+@media screen and (max-width:880px) {
+    .home-explanation {
+        margin-bottom: 100px;
+    }
+
+    .blob2 {
+        margin-top: 110px;
+        width: 20%;
+    }
+
+    .explanation-text {
+        padding-top: 80px;
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:580px) {
+    .blob2 {
+        margin-top: 70px;
+        width: 20%;
+    }
+
+    .explanation-text {
+        padding-top: 40px;
+        width: 80%;
+    }
+}
+
+/* grid compétences */
+article.home-xp {
+    position: relative;
+    width: 100%;
+    padding: 0;
+    margin-top: 50px;
+}
+
+article.home-xp h2,
+article.home-identity h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px 0 70px 0;
+    color: #FFFAF1;
+    text-transform: uppercase;
+    text-shadow:
+        -1px -1px 0 #F6911F,
+        1px -1px 0 #F6911F,
+        -1px 1px 0 #F6911F,
+        1px 1px 0 #F6911F;
+}
+
+article .home-grid {
+    color: #FFFAF1;
+    padding: 1% 6%;
+    margin-top: 100px;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 7px 7px;
+    width: 100%;
+}
+
+article .home-grid .gridImg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.gridImg img {
+    width: 30%;
+}
+
+.gridFond {
+    top: -30px;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+@media screen and (max-width:1280px) {
+    .gridFond {
+        top: 0;
+    }
+
+    article.home-xp h2 {
+        padding: 20px 0 30px 0;
+    }
+
+    .home-grid {
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width:1080px) {
+    article .home-grid {
+        margin-top: 20px;
+        padding-bottom: 100px;
+    }
+
+    article.home-xp h2 {
+        padding: 20px 0 20px 0;
+    }
+}
+
+@media screen and (max-width:880px) {
+    article .home-grid {
+        display: flex;
+        flex-direction: column;
+        background: linear-gradient(#FDB769, #A331CB);
+        margin: 0;
+    }
+
+    .gridDiv {
+        margin-top: 20px;
+        border-top: 4px dotted #FFFAF1;
+    }
+
+    .gridDiv p {
+        margin-top: 20px;
+    }
+
+    .gridFond {
+        display: none;
+    }
+
+    .gridImg img {
+        width: 20%;
+    }
+}
+
+.gridDiv {
+    display: flex;
+    flex-direction: column;
+}
+
+.gridDiv p {
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* section présentation laly */
+
+.blob3 {
+    position: absolute;
+    top: -60px;
+    left: 0;
+    width: 25%;
+    z-index: -1;
+}
+
+.blob3-laly {
+    position: absolute;
+    border-radius: 200px;
+    top: 200px;
+    left: 10px;
+    width: 20%;
+}
+
+article.home-identity {
+    position: relative;
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 400px;
+}
+
+article.home-identity p {
+    margin-left: 200px;
+    width: 60%;
+}
+
+@media screen and (max-width:1680px) {
+    article.home-identity {
+        margin-top: 250px;
+    }
+}
+
+@media screen and (max-width:1080px) {
+    article.home-identity {
+        margin-top: 100px;
+        margin-bottom: 200px;
+    }
+
+    article.home-identity p {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width:930px) {
+    article.home-identity {
+        margin-top: 50px;
+        margin-bottom: 100px;
+    }
+
+    article.home-identity p {
+        width: 80%;
+    }
+
+    .blob3-laly {
+        position: relative;
+        top: 50px;
+        width: 20%;
+    }
+}
+
+@media screen and (max-width:580px) {
+    article.home-identity p {
+        margin-bottom: 50px;
+    }
+
+    .blob3-laly {
+        width: 40%;
+    }
+}

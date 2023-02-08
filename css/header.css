@@ -1,0 +1,73 @@
+/* Reset css */
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    text-decoration: none;
+    color: inherit;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: "Kirvy";
+    src: url(../font/Kirvy-Regular.otf);
+}
+
+@font-face {
+    font-family: "Kirvy-Bold";
+    src: url(../font/Kirvy-Bold.otf);
+}
+
+/* ----------- HEADER ------------- */
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(#FDB769, #A331CB);
+    color: #FFFAF1;
+}
+
+header img {
+    width: 15%;
+    border-radius: 100px;
+}
+
+header nav ul {
+    width: 100%;
+    text-align: center;
+    display: inline-flex;
+    justify-content: flex-end;
+}
+
+
+header nav ul li a {
+    transition: 300ms ease-out;
+    margin-left: 30px;
+    text-decoration: underline wavy #F6911F !important;
+}
+
+header nav ul li a:hover {
+    text-decoration: overline wavy #F6911F !important;
+    color: #F6911F !important;
+}
+
+@media screen and (max-width:880px) {
+    header img {
+        width: 25%;
+    }
+
+    header nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    header nav ul li {
+        margin-top: 20px;
+    }
+}

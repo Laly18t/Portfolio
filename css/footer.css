@@ -1,0 +1,40 @@
+/* footer */
+.footer-top {
+    color: #FFFAF1;
+    padding: 1% 6%;
+}
+
+footer {
+    margin: 0;
+    position: relative;
+    color: #FFFAF1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+footer>div {
+    width: fit-content;
+    display: flex;
+    align-items: end;
+}
+
+footer>div img {
+    width: 20%;
+    margin: 0 10px;
+}
+
+.blobFooter {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: fit-content;
+    z-index: -1;
+}
+
+@media screen and (max-width:880px) {
+    footer {
+        flex-direction: column;
+    }
+}
