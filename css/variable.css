@@ -11,7 +11,8 @@ h2 {
 
 header nav ul,
 article.home-identity p,
-article.library :nth-child(3) {
+article.library :nth-child(3),
+.align {
     font-size: 20px;
 }
 
@@ -41,7 +42,8 @@ header nav ul li a:hover {
         font-size: 24px;
     }
 
-    header nav ul {
+    header nav ul,
+    .align {
         font-size: 16px;
     }
 }
@@ -51,5 +53,9 @@ header nav ul li a:hover {
     header nav ul,
     article.home-identity p {
         font-size: 14px;
+    }
+
+    body {
+        font-size: 16px;
     }
 }
