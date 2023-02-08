@@ -53,8 +53,8 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    text-decoration: overline wavy #F6911F !important;
-    color: #F6911F !important;
+    transition: 300ms ease-out;
+    text-decoration: overline wavy #A331CB !important;
 }
 
 @media screen and (max-width:880px) {

@@ -2,14 +2,16 @@
     margin: 50px 8%;
     text-align: center;
     padding: 20px 0;
-    background-color: #FDB769;
+    background: linear-gradient(90deg, #A331CB, #FDB769);
     border-radius: 200px;
+    color: #FFFAF1;
 }
 
 .projet-accroche ul {
-    margin-top: 40px;
+    width: 70%;
+    margin: 40px auto 0 auto;
     display: flex;
-    color: #A331CB;
+    font-style: italic;
     flex-direction: row;
     justify-content: space-around;
 }
