@@ -283,12 +283,10 @@ a.cv {
     margin: auto;
     opacity: 0.9;
     border-radius: 20px;
-    transition: 400ms;
+    transition-duration: 400ms;
 }
 
 a.cv:hover {
-    background-color: none;
-    transition: 400ms;
     background: linear-gradient(45deg, #F6911F, #A331CB);
 }
 

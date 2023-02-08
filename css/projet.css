@@ -39,6 +39,12 @@
         1px 1px 0 #F6911F;
 }
 
+section p.align {
+    text-align: center;
+    margin: auto;
+    width: 70%;
+}
+
 article.carousel {
     width: 80%;
     height: 50%;
